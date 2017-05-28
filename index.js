@@ -1,7 +1,7 @@
 import inferno from 'inferno'
 import { combine, merge, of } from 'most'
 
-import calculateSleepTime from './h/calculateSleepTime'
+import calculateSleepTimes from './h/calculateSleepTimes'
 import Div from './h/div'
 import SleepAt from './c/sleepAt'
 import WakeUpAt from './c/wakeUpAt'
@@ -9,7 +9,7 @@ import WakeUpAt from './c/wakeUpAt'
 const wakeUpAt = WakeUpAt()
 const sleepAt = SleepAt(
   wakeUpAt.value$
-    .map(calculateSleepTime)
+    .map(calculateSleepTimes)
     .map(times => times.join(' or '))
 )
 

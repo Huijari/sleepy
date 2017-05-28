@@ -2,7 +2,7 @@ const min = 3
 const interval = 1.5
 const quantity = 4
 
-const calculateSleepTime = time => {
+const calculateSleepTimes = time => {
   const date = new Date()
   date.setHours(time.split(':')[0])
   date.setMinutes(time.split(':')[1])
@@ -26,4 +26,4 @@ const calculateSleepTime = time => {
   return sleepTimes
 }
 
-export default calculateSleepTime
+export default calculateSleepTimes
