@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/huijari/sleepy/issues"
   },
-  "homepage": "https://github.com/huijari/sleepy#readme"
+  "homepage": "https://github.com/huijari/sleepy#readme",
+  "dependencies": {
+    "inferno": "^3.3.1",
+    "inferno-hyperscript": "^3.3.1",
+    "most": "^1.4.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }
