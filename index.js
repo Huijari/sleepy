@@ -1,11 +1,10 @@
 import inferno from 'inferno'
 import { combine, merge, of } from 'most'
 
+import calculateSleepTime from './h/calculateSleepTime'
 import Div from './h/div'
 import SleepAt from './c/sleepAt'
 import WakeUpAt from './c/wakeUpAt'
-
-import calculateSleepTime from './calculateSleepTime'
 
 const wakeUpAt = WakeUpAt()
 const sleepAt = SleepAt(
