@@ -21,7 +21,7 @@ const bottom = merge(
 
 const vtree$ = combine(
   Div,
-  of(h('h1', 'Sleepy')),
+  of(h('h1', { className: 'tc' }, 'Sleepy')),
   wakeUpAt.vtree$,
   bottom
 )
