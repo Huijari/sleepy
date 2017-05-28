@@ -1,5 +1,6 @@
-import inferno from 'inferno'
 import { combine, merge, of } from 'most'
+import h from 'inferno-hyperscript'
+import inferno from 'inferno'
 
 import calculateSleepTimes from './h/calculateSleepTimes'
 import Div from './h/div'
@@ -20,6 +21,7 @@ const bottom = merge(
 
 const vtree$ = combine(
   Div,
+  of(h('h1', 'Sleepy')),
   wakeUpAt.vtree$,
   bottom
 )
