@@ -10,6 +10,8 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    contentBase: '.'
+    contentBase: '.',
+    host: '0.0.0.0',
+    disableHostCheck: true
   }
 }
