@@ -5,8 +5,8 @@
   "background_color": "#5e2ca5",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/sleepy",
+  "start_url": "/sleepy",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
