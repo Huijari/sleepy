@@ -1,7 +1,7 @@
 import { combine } from 'most'
 
 import Button from './button'
-import Div from './div'
+import Div from './h/div'
 import Input from './input'
 
 const WakeUpAt = () => {
