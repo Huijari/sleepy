@@ -2,8 +2,8 @@ import inferno from 'inferno'
 import { combine, merge, of } from 'most'
 
 import Div from './h/div'
-import SleepAt from './sleepAt'
-import WakeUpAt from './wakeUpAt'
+import SleepAt from './c/sleepAt'
+import WakeUpAt from './c/wakeUpAt'
 
 import calculateSleepTime from './calculateSleepTime'
 
