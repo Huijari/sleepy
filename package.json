@@ -1,0 +1,24 @@
+{
+  "name": "sleepy",
+  "version": "1.0.0",
+  "description": "Sleep calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huijari/sleepy.git"
+  },
+  "keywords": [
+    "sleep",
+    "calculator",
+    "pwa"
+  ],
+  "author": "Alexandre Cesar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huijari/sleepy/issues"
+  },
+  "homepage": "https://github.com/huijari/sleepy#readme"
+}
