@@ -1,6 +1,7 @@
 const min = 3
 const interval = 1.5
 const quantity = 4
+const timeToFellAsleep = 14
 
 const calculateSleepTimes = time => {
   const date = new Date()
@@ -14,8 +15,15 @@ const calculateSleepTimes = time => {
   const sleepTimes = points
     .map(point => {
       const sleepDate = new Date()
-      sleepDate.setHours(date.getHours() - Math.floor(point))
-      sleepDate.setMinutes(date.getMinutes() - 60 * (point % 1))
+      sleepDate.setHours(
+        date.getHours() -
+        Math.floor(point)
+      )
+      sleepDate.setMinutes(
+        date.getMinutes() -
+        60 * (point % 1) -
+        timeToFellAsleep
+      )
       return sleepDate
     })
     .map(sleepDate => sleepDate

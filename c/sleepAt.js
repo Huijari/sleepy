@@ -1,8 +1,8 @@
 import h from 'inferno-hyperscript'
 
-const SleepAt = hour$ => {
-  const vtree$ = hour$.map(hour =>
-    h('p', `You need to sleep at ${hour}`)
+const SleepAt = times$ => {
+  const vtree$ = times$.map(times =>
+    h('p', `You should go to bed at ${times}.`)
   )
 
   return { vtree$ }
