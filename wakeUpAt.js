@@ -1,7 +1,7 @@
 import { combine } from 'most'
-import h from 'inferno-hyperscript'
 
 import Button from './button'
+import Div from './div'
 import Input from './input'
 
 const WakeUpAt = () => {
@@ -11,7 +11,7 @@ const WakeUpAt = () => {
   const value$ = time.value$
     .sampleWith(calculate.click$)
   const vtree$ = combine(
-    (timeV, calculateV) => h('div', [ timeV, calculateV ]),
+    Div,
     time.vtree$,
     calculate.vtree$
   )
