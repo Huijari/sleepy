@@ -1,20 +1,13 @@
 import { combine } from 'most'
 
-import Button from '../a/button'
 import Div from '../h/div'
 import Input from '../a/input'
 
 const WakeUpAt = () => {
-  const time = Input('Wake up at', 'time')
-  const calculate = Button('calculate')
+  const time = Input('To wake up at', 'time')
 
   const value$ = time.value$
-    .sampleWith(calculate.click$)
-  const vtree$ = combine(
-    Div,
-    time.vtree$,
-    calculate.vtree$
-  )
+  const vtree$ = time.vtree$
 
   return { value$, vtree$ }
 }
